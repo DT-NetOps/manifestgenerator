@@ -1,0 +1,38 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.generator.manifest"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.generator.manifest"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.generator.manifest"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.generator.manifest"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.generator.manifest"
+        },
+        "plugin.google.maps": {
+            "API_KEY_FOR_ANDROID": "AIzaSyCgk6-2rDSPor8AdTQo07XU5BSlhJZqGRg",
+            "PACKAGE_NAME": "com.generator.manifest"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "com.generator.manifest"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.generator.manifest"
+        }
+    }
+}

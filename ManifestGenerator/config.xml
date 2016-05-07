@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.generator.manifest" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Manifest Generator</name>
+    <description>
+        This is a hybrid application build in Cordova 6.1.1 for Android 5.1.1 platform with list of clients and their details which include container(s) + item(s) based on barcodes scanned with the camera and stored data in the HTML5 local storage.<br/>
+		It allows to create pdf file with all scanned container(s) + item(s), total quantities of each as well as client details such as Name, Address, Email, Phone and Comment which will be send via email.<br/>
+		It also uses Google Maps to locate the client on the map and allow the user to find the route via navigation.<br/>
+    </description>
+    <author email="dariusz.terefenko@gmail.com" href="http://dariusz-terefenko.strikingly.com">
+        Dariusz Terefenko
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+	
+        <icon src="res/android/mdpi.png" density="mdpi" />
+        <icon src="res/android/hdpi.png" density="hdpi" />
+        <icon src="res/android/xhdpi.png" density="xhdpi" />
+        <icon src="res/android/xxhdpi.png" density="xxhdpi" />
+        
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    
+</widget>

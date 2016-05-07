@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html manifest="manifest.php" class="with-statusbar-overlay">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Manifest Generator</title>
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/generator.css"> 
+  </head>
+  <body>
+    
+	<!-- statusbar overlay-->
+    <div class="statusbar-overlay"></div>
+    
+	<!-- views-->
+    <div class="views">
+      <div class="view view-main navbar-fixed">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding">Manifest Generator</div>
+            <div class="right"><a href="#" class="open-client"><i class="icon icon-plus">+</i></a></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div data-page="index" class="page">
+            <div class="page-content">
+	      <center><img src="img/applogo.png" width="80%"></center>
+              <div class="list-block client-items-list theme-pink"></div>
+            </div>
+          </div>
+        </div>
+		
+      </div>
+    </div>
+    
+	<!-- popup to add new client -->
+    <div class="popup popup-client">
+      <div class="view view-popup navbar-fixed">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding">Add client</div>
+            <div class="right"><a href="#" class="link close-popup">Cancel</a></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Firstname</div>
+                        <div class="item-input">
+                          <input type="text" name="firstname">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Surname</div>
+                        <div class="item-input">
+                          <input type="text" name="surname">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">E-mail</div>
+                        <div class="item-input">
+                          <input type="text" name="email">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Phone number</div>
+                        <div class="item-input">
+                          <input type="text" name="phone">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Address 1</div>
+                        <div class="item-input">
+                          <input type="text" name="address1">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Address 2</div>
+                        <div class="item-input">
+                          <input type="text" name="address2">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Address 3</div>
+                        <div class="item-input">
+                          <input type="text" name="address3">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Address 4</div>
+                        <div class="item-input">
+                          <input type="text" name="address4">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Address 5</div>
+                        <div class="item-input">
+                          <input type="text" name="address5">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Comments</div>
+                        <div class="item-input">
+                          <input type="text" name="comments">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block"><a href="#" class="button add-client">Add client</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <div class="popup popup-container">
+      <div class="view view-popup navbar-fixed">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding">Add container</div>
+            <div class="right"><a href="#" class="link close-popup">Cancel</a></div>
+          </div>
+        </div>
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">ID</div>
+                        <div class="item-input">
+                          <input type="text" name="containerid">
+                        </div>
+						<a href="#" class="scan-id">Scan</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Location 1</div>
+                        <div class="item-input">
+                          <input type="text" name="location1">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Location 2</div>
+                        <div class="item-input">
+                          <input type="text" name="location2">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                                   
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner"> 
+                        <div class="item-title label">Comments</div>
+                        <div class="item-input">
+                          <input type="text" name="comments">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block"><a href="#" class="button add-container">Add container</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- template -->
+    <script id="client-item-template" type="text/template">
+      <ul>{{#each this}}
+        <li data-id="{{id}}" class="swipeout">
+          <div class="swipeout-content">
+            <label class="item-content">
+              <div class="item-inner">
+		
+                <div class="item-title">{{firstname}} {{surname}}<br/>
+				{{phone}}<br/>
+				{{email}}</div>
+		
+              </div>
+            </label>
+          </div>
+          <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+        </li>{{/each}}
+      </ul>
+    </script>
+    
+    <script id="container-item-template" type="text/template">
+      <ul>{{#each this}}
+        <li data-id="{{containerid}}" class="swipeout">
+          <div class="swipeout-content">
+            <label class="item-content">
+              <div class="item-inner">
+                <div class="item-title">{{containerid}}<br/>{{location1}}<br/>{{location2}}</div>
+              </div>
+            </label>
+          </div>
+          <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+        </li>{{/each}}
+      </ul>
+    </script>
+	
+	<script id="container-pdf-item-template" type="text/template">
+      <ul>{{#each this}}
+        <li data-id="{{containerid}}" class="swipeout">
+          <div class="swipeout-content">
+            <label class="item-content">
+              <div class="item-inner">
+                <div class="item-title">{{containerid}}<br/>{{location1}}<br/>{{location2}}<br/>{{items}}
+				</div>
+              </div>
+            </label>
+          </div>
+          <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+        </li>{{/each}}
+      </ul>
+    </script>
+    
+    <script id="item-item-template" type="text/template">
+      <ul>{{#each this}}
+        <li data-id="{{containerid}}" class="swipeout">
+          <div class="swipeout-content">
+            <label class="item-content">
+              <div class="item-inner">
+                <div class="item-title">{{this}}</div>
+              </div>
+            </label>
+          </div>
+          <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+        </li>{{/each}}
+      </ul>
+    </script>
+	
+	<script type="text/template" id="clientPageTemplate">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="left"><a href="#" class="back"><i class="icon icon-back"></i></a></div>
+				<div class="center">Report details</div>
+				<div class="right"><a href="#" class="open-send"><i class="icon icon-plus">&gt;</i></a>
+				<a href="#" class="open-container"><i class="icon icon-plus">+</i></a></div>
+				
+			</div>
+		</div>
+		<div class="page" data-page="clientPage" data-client-id="{{id}}">
+			<div class="page-content">
+				<input type="hidden" name="clientid", value="{{id}}">
+				<h2>{{firstname}} {{surname}}</h2>
+				{{email}}<br/>
+				{{phone}}<br/>
+				{{address1}}<a href="#" class="show-client-location"> Show on map</a><br/>
+				{{address2}}<br/>
+				{{address3}}<br/>
+				{{address4}}<br/>
+				{{address5}}<br/>
+				{{comments}}<br/>
+				<div class="list-block container-items-list theme-pink"></div>
+			</div>
+		</div>
+	</script>
+	
+	<script type="text/template" id="pdfPageTemplate">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="left"><a href="#" class="back"><i class="icon icon-back"></i></a></div>
+				<div class="center">Client details</div>				
+			</div>
+		</div>
+		<div class="page" data-page="clientPage" data-client-id="{{id}}">
+			<div class="page-content">
+				<input type="hidden" name="clientid", value="{{id}}">
+				<h2>{{firstname}} {{surname}}</h2>
+				{{email}}<br/>
+				{{phone}}<br/>
+				{{address1}}<br/>
+				{{address2}}<br/>
+				{{address3}}<br/>
+				{{address4}}<br/>
+				{{address5}}<br/>
+				{{comments}}<br/>
+				<div class="list-block container-pdf-items-list theme-pink"></div>
+				Container(s) QTY: {{containersqty}}<br/>
+				Item(s) QTY: {{itemsqty}}
+				<div class="item-input">
+					<input type="checkbox" name="acknowledge">TICK TO ACKNOWLEDGE
+				</div>
+				
+				<div class="content-block"><a href="#" class="button send-pdf">SEND</a></div>
+			</div>
+		</div>
+	</script>  
+	
+	<script type="text/template" id="containerPageTemplate">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="left"><a href="#" class="back"><i class="icon icon-back"></i></a></div>
+				<div class="center">Container details</div>
+				<div class="right"><a href="#" class="open-item"><i class="icon icon-plus">+</i></a></div>
+			</div>
+		</div>
+		<div class="page" data-page="containerPage" >
+			<div class="page-content">
+				<input type="hidden" name="clientid", value="{{clientid}}">
+				<input type="hidden" name="containerid", value="{{containerid}}">
+				<h2>{{containerid}} </h2>
+				{{location1}}<br/>
+				{{location2}}<br/>
+				{{comments}}<br/>
+				<h1>Items</h1>
+				<div class="list-block items-items-list theme-pink"></div>
+			</div>
+		</div>
+	</script>  
+    
+    <!-- path to F7 -->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    
+	<!-- path to pdf -->
+    <script type="text/javascript" src="js/jspdf.min.js"></script>
+    
+	<!-- path to app -->
+	<script type="text/javascript" src="js/generator.js"></script>
+    
+	<!-- path to cordova -->
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>
