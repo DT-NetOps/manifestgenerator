@@ -20,6 +20,23 @@ HTML5
 We have used Framework 7 (F7) to design the User Experience (UX) of the hybrid app and to give it an Android native look.
 The main approach of F7 is to give a possibility to create iOS and Android with HTML, CSS and JavaScript. It is not compatible with all platforms and it mainly focuses on iOS and Google material design what brings the best quality and simplicity to the project.
 http://framework7.io
+Selector engine was used to manipulate DOM for dynamic popups of myApp variable in the main view:
+http://framework7.io/docs/dom.html
+F7 Templates Auto Compilation was used to automatically compile templates to generate the pages and the lists in the script tags with below ids:
+•	client-item-template: loads template of id element for swipeout
+•	container-item-template: displays list of updated containers
+•	container-pdf-item-template: displays list of containers during the pdf generation
+•	item-item-template: displays updated list of items
+•	clientPageTemplate: displays the client view
+•	pdfPageTemplate: loads context for client data
+•	containerPageTemplate: displays the view for the containers
+http://framework7.io/docs/template7-auto-compilation.html
+Router API was used to navigate between below pages:
+•	pdfPageTemplate loaded into page view with content for the for the client data
+•	clientPageTemplate loaded into page view with content of the client view
+•	containerPageTemplate laded into page view with content of the container
+http://framework7.io/docs/router-api.html
+
 Library called jsPDF was used as HTML5 client-side solution to generate a PDF file for the report.
 https://github.com/MrRio/jsPDF
 
