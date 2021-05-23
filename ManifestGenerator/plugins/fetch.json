@@ -55,7 +55,7 @@
         },
         "is_top_level": true,
         "variables": {
-            "API_KEY_FOR_ANDROID": "AIzaSyCgk6-2rDSPor8AdTQo07XU5BSlhJZqGRg"
+            "API_KEY_FOR_ANDROID": ""
         }
     },
     "cordova-plugin-email-composer": {
